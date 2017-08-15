@@ -1,0 +1,25 @@
+<div >
+<div>
+    <h1 ng-bind="dataList.title" >正在上映的电影</h1>
+    <div class="list" ng-repeat="value in dataList.subjects">
+        <a href="#" >
+            <dl>
+                <dt><img src="img.png" ng-src="{{value.images.small}}"  alt=""></dt>
+                <dd>
+                    <h4>标题:<span ng-bind="value.title"></span></h4>
+                    <p>类型:<span ng-repeat="key in value.genres" style="margin-right:5px;">{{key}}</span> </p>
+                    <p>导演:<span ng-repeat="key in value.directors" style="margin-right:5px;">{{key.name}}</span></p>
+                    <p>主演:<span ng-repeat="key in value.casts" style="margin-right:5px;">{{key.name}}</span> </p>
+                </dd>
+                <span class="score" ng-bind="value.rating.average">5</span>
+            </dl>
+        </a>
+
+    </div>
+    <div class="page">
+        <span></span>
+        <a href="javascript:;" ng-click="pre()" ng-show="preTurnOff">上一页</a>
+        <a href="javascript:;" ng-click="next()" ng-show="nextTurnOff">下一页</a>
+    </div>
+</div>
+</div>

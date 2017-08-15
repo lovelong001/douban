@@ -1,0 +1,25 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  background: #008000;
+  border: 3px solid #000000;
+}
+.box2 ul {
+  list-style: none;
+}
+.box2 ul li {
+  line-height: 30px;
+  width: 100px;
+  text-align: center;
+  margin-top: 10px;
+  border: 5px solid #000000;
+  background: #008000;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: #008000;
+  border: 3px solid #000000;
+  height: 500px;
+  background: #0000ff;
+}

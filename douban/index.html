@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="wrapController">
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind="title">Title</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!--https://api.douban.com/v2/movie/in_theaters-->
+<div class="header">
+
+    <span>豆瓣电影</span>
+    <div class="search">
+            <input type="text" value="请输入要搜索的内容...">
+            <button>搜索</button>
+    </div>
+
+</div>
+<div class="content">
+    <div class="content_l">
+        <ul>
+            <li class="active"><a href="#!/movie/in_theaters">热门电影</a></li>
+            <li><a href="#!movie/coming_soon">即将上映</a></li>
+            <li><a href="#!movie/top250">top250电影</a></li>
+        </ul>
+    </div>
+    <div class="content_r">
+    <div ng-view></div>
+
+</div>
+</div>
+<script src="js/angular-1.6.4.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/index.js"></script>
+<!--<script>-->
+    <!--var fn =  function (res){-->
+        <!--console.log(res);-->
+    <!--}-->
+    <!--var script = document.createElement('script');-->
+    <!--document.body.appendChild(script);-->
+    <!--script.src='https://api.douban.com/v2/movie/in_theaters?count=5&start=0&callback=fn'-->
+
+<!--</script>-->
+</body>
+</html>
+
+<!--
+    1.大体思路:
+        1.利用a链接,点击左边的选项,利用angular的路由功能实现单页面跳转,在路由的控制器里面 用原生的跨域请求到服务器拿到数据
+
+        2. 再拿到路由的模板中一一展示
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

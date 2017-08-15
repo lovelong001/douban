@@ -1,0 +1,35 @@
+@width:200px;
+@height:200px;
+.box1{
+  width: @width;
+  height:@height;
+  .bgcolor(green);
+  .bd(3px)
+}
+.box2{
+
+  ul{
+    list-style: none;
+    li{
+      line-height: 30px;
+      width: 100px;
+      text-align: center;
+      margin-top: 10px;
+      .bd(5px);
+      .bgcolor(green)
+
+    }
+  }
+}
+.bgcolor(@color){
+  background:@color;
+}
+.bd(@width){
+  border: @width solid #000;
+}
+.box2{
+  .box1;
+  height: 500px;
+  .bgcolor(blue);
+
+}
